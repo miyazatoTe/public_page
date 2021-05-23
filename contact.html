@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="table.css">
+<link rel="stylesheet" href="form.css">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<title>お問合せ｜宮里サンプル株式会社</title>
+</head>
+<body>
+<div id="pagebody">
+
+	<!-- ヘッダ -->
+	<div id="header">
+		<h1><i class="fas fa-chair h1font"></i><a href="index.html">宮里サンプル株式会社</a></h1>
+	</div>
+	
+	<!-- メインメニュー -->
+	<ul id="menu">
+		<li><a href="index.html"><i class="fas fa-home fa-lg"></i>ホーム</a></li> <!-- ハイパーリンク -->
+		<li><a href="product.html"><i class="fas fa-archive fa-lg"></i>製品紹介</a></li>
+		<li><a href="profile.html"><i class="fas fa-building fa-lg"></i>会社概要</a></li>
+		<li><a href="contact.html"><i class="fas fa-dove fa-lg"></i>お問い合わせ</a></li>
+	</ul>
+
+	<!-- ヘッダ画像 -->
+	<div id="img_subpage">
+	<img src="./images/img_contact.png" alt="お問合せ">
+	</div>
+
+	<!-- サブメニュー（左カラム） -->
+	<div id="submenu">
+		<h2><i class="fas fa-caret-down fa-lg"></i>お問合せ</h2>
+		<ul>
+			<li><a href="#info0001">フォームからのお問合せ</a></li>
+			<li><a href="#info0002">メールでのお問合せ</a></li>
+			<li><a href="#info0003">お電話でのお問合せ</a></li>
+		</ul>
+	</div>
+
+	<!-- インフォメーション（右カラム） -->
+	<div id="info">
+		<h3 id="info0001">フォームからのお問合せ</h3>
+		<form method="post" action="xxxxx.php" id="form1" name="form1">
+		<table class="profile">
+		<tr>
+			<th>お問い合わせ区分</th>
+			<td>
+				<div class="radio">
+				    <input id="radio-1" name="sort" type="radio" value="1" checked>
+				    <label for="radio-1" class="radio-label">商品に関するお問い合わせ</label>
+			    </div>
+			    <div class="radio">
+				    <input id="radio-2" name="sort" type="radio" value="2">
+				    <label  for="radio-2" class="radio-label">採用に関するお問い合わせ</label>
+			    </div>
+			    <div class="radio">
+				    <input id="radio-3" name="sort" type="radio" value="99">
+				    <label for="radio-3" class="radio-label">その他のお問い合わせ</label>
+			    </div>
+			</td>
+		</tr>
+		<tr>
+			<th>メールアドレス</th>
+			<td><input type="email" size="30" name="mail" id="mail" required></td>
+		</tr>
+		<tr>
+			<th>お名前</th>
+			<td><input type="text" size="20" name="namae" id="namae" required></td>
+		</tr>
+		<tr>
+			<th>お問合せの内容</th>
+			<td><textarea name="naiyou" cols="40" rows="5" placeholder="出来るだけ詳しくお書きください" required></textarea></td>
+		</tr>
+		</table>
+		<input type="hidden" name="q" value="1">
+		<p><input type="submit" value="送信する" class="form-submit-button"></p>
+		</form>
+				
+		<hr>
+
+		<h3 id="info0002">メールでのお問合せ</h3>
+		<p>
+			xxx@xxxxx.xxx
+			までメールをお送りください。
+		</p>
+		<hr>
+
+		<h3 id="info0003">お電話でのお問合せ</h3>
+		<img src="images/contact0001.png" alt="電話番号0000-000-000" class="infoimg_tel">
+		<div class="remarks">
+			<h4>受付時間</h4>
+			受付時間は、平日午前9時から午後5時までです。
+		</div>
+		<hr>
+	</div>
+
+	<!-- フッタ -->
+	<div id="footer"><small>Copyright (c) 宮里サンプル株式会社 All Rights Reserved.</small></div>
+
+</div>
+</body>
+</html>

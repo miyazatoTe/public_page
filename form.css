@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/***************************************
+入力フォーム
+***************************************/
+#form1 input, #form1 textarea {
+	font-size:16px;
+	border:1px solid #999999;
+	padding: 2px;
+	border-radius:3px;
+	box-shadow:1px 1px 1px 1px rgba(0,0,0,0.1) inset;
+}
+#form1 input:focus, #form1 textarea:focus {
+	box-shadow: 0px 0px 5px 2px #ccccee;
+	outline-style:none;
+}
+#form1 p {
+	text-align:center;
+	text-indent:0;
+}
+.form-submit-button {
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: blue;
+    color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    border: 2px solid transparent;
+    margin-bottom: 5px;
+}
+input[type="text"], input[type="email"] { /*属性セレクタ*/
+	width:70%;
+}

@@ -1,90 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
-    </div>
-  </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
-    </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
-          </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
-          </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
-        </div>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
-      </div>
-      <span class="btn message">さっそく開発する</span>
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
-    </div>
-  </footer>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="本サイトは練習用サンプルです。宮里サンプル株式会社は架空の企業です。">
+<meta name="keywords" content="宮里サンプル株式会社">
+		<link rel="stylesheet" href="base.css">
+		<link rel="stylesheet" href="slide.css">
+		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+		<title>宮里サンプル株式会社</title>
+	</head>
+	<body>
+		<div id="pagebody">
+			<!-- ヘッダ -->
+			<div id="header">
+				<h1><i class="fas fa-chair h1font"></i><a href="index.html">宮里サンプル株式会社</a></h1>
+			</div>
+			
+			<!-- メインメニュー -->
+			<ul id="menu"><!-- リスト -->
+				<li><a href="index.html"><i class="fas fa-home fa-lg"></i>ホーム</a></li> <!-- ハイパーリンク -->
+				<li><a href="product.html"><i class="fas fa-archive fa-lg"></i>製品紹介</a></li>
+				<li><a href="profile.html"><i class="fas fa-building fa-lg"></i>会社概要</a></li>
+				<li><a href="contact.html"><i class="fas fa-dove fa-lg"></i>お問い合わせ</a></li>
+			</ul>
+			
+			<!-- ヘッダ画像 -->
+			<div id="img_index" class="slide">
+				<img src="./images/img_top1.jpg" alt="宮里サンプル株式会社">
+				<img src="./images/img_top2.jpg" alt="宮里サンプル株式会社">
+				<img src="./images/img_top3.jpg" alt="宮里サンプル株式会社">
+			</div>
+			
+			<!-- サブメニュー（左カラム） --><!-- ■■ -->
+			<div id="submenu"><!-- ■■ -->
+				<h2><i class="fas fa-caret-down fa-lg"></i>新着情報</h2>
+				<ul>
+					<li><a href="#info0001">新商品のご案内</a></li>
+					<li><a href="#info0002">展示会への出展</a></li>
+					<li><a href="#info0003">環境への取り組み</a></li>
+				</ul>
+			</div>
+			
+			<!-- インフォメーション（右カラム） --><!-- ■■ -->
+			<div id="info"><!-- ■■ -->
+				<h3 id="info0001">新商品のご案内</h3>
+				<p> <!-- paragraphのp 前後が改行される -->
+					<img src="images/index0001.png" alt="新商品のイメージ画像" class="infoimg_index">
+					本日は弊社の新商品「○○○○」のご案内をさせていただきます。本商品は従来の流通コストを省きまして
+					製造直販ならではの<span class="strength">低価格化</span>を実現いたしました。常に製品の純度を高め質の向上に力を注いでおりますので
+					高級志向のお客様にもご満足いただける商品だと確信しております。<br>また、在庫の品質管理にも細心の注意を
+					はらいまして、消費者の皆様からのニーズに誠実にお応えしております。弊社の「○○○○」をぜひご利用
+					いただきますよう、ご検討のほどよろしくお願いいたします。
+				</p>
+				<hr><!-- テーマの区切りを表す -->
+			
+				<h3 id="info0002">展示会への出展</h3>
+				<p>
+					<img src="images/index0002.png" alt="展示会への出展のイメージ画像" class="infoimg_index">
+					２２１５年１月２８日～３０日に<span class="strength">大阪ピックサイト</span>で開催されます展示会に出展いたします。 ぜひお立ち寄りください。<br><br>
+					①新機能性素材展2215<br>　会場：<span class="strength">大阪ピックサイト</span>東２・３ホール＆会議棟 新開発しました断熱素材の他、
+					世界で最も軽い蜜柑不織布(2g/㎡)や世界で初めてシート化に成功したDSS100%の不織布を展示しております。<br><br>
+					②nano tech 2215 第114回 国際ポゴテクノロジー総合展・技術会議<br>
+					　会場：<span class="strength">大阪ピックサイト</span>東4・5・6ホール&会議棟 光ファイバー複合不織布の展示を行っております。
+				</p>
+				<hr>
+				
+				<h3 id="info0003">環境への取り組み</h3>
+				<p>
+					<img src="images/index0003.png" alt="環境への取り組みのイメージ画像" class="infoimg_index">
+					宮里グループは、企業活動を通じて持続可能な循環型社会の形成を推進します。
+					また、環境マネジメントシステムの継続的改善を行い、企業活動のあらゆる面で環境に配慮した取り組みを行います。<br>
+					1. <span class="strength">環境</span>に関する法令、条例等の順守<br>
+					　国内外の環境に関わる法令や条例等を順守し、国際的な基準・規格等に対応します。<br>
+					2. 製品に関わる全過程での環境負荷の低減<br>
+					　製品の企画・開発段階から生産・販売・廃棄に至るまでの全過程において、<span class="strength">環境負荷</span>を考慮し、その低減に努めます。<br>
+				</p>
+				<hr>
+			</div>
+			
+			<!-- フッター -->
+			<div id="footer"><small>Copyright (c) 宮里サンプル株式会社 All Rights Reserved.</small></div>
+		</div>
+	</body>
 </html>

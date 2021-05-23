@@ -1,0 +1,212 @@
+@charset "utf-8"; /* 先頭にこのように文字コードをセットする */
+/*========================================
+全般的なスタイル
+==========================================*/ 
+* {
+	margin: 0; padding: 0; /* すべての余白をリセット cssでは値が0のときは単位を省略できる */
+}
+body {
+	background-color: whitesmoke; /* ページ全体の背景色 */
+	font-size: 95%;
+	font-family: sans-serif; /* serifにしてみる */
+	line-height: 1.5; /* 1にしてみる */
+	color: #333333; /* redにしてみる */
+}
+
+div#pagebody {
+	width: 1000px; margin:0 auto; /* 内容全体のセンタリング 上下マージンを0にして、左右マージンを自動算出 */
+	background-color: #ffffff; /* 内容全体の背景色 */
+}
+p {
+	width: 660px;
+	margin: 10px;
+	text-indent:1em; /* インデント幅 emとはフォントの高さを1とする単位。段落の一行目を一文字分インデント*/
+}
+hr {
+	clear: both;
+	width: 680px;
+	margin: 10px 0px;
+	border: 1px solid  whitesmoke;
+}
+.fas {
+	margin-right:5px;
+}
+.strength {
+	font-weight: bold;
+	color: crimson;
+}
+/*======================================== 
+ヘッダ
+==========================================*/
+div#header {
+	height: 60px;
+}
+div#header h1 {
+	padding:10px 0px 5px 20px; /* 上 | 右 | 下 | 左 */
+}
+#header h1 a {
+	color: #333333;
+	text-decoration: none;
+}
+.h1font {
+	margin:0px 15px 0px 10px;
+	color: #333333;
+}
+
+/*========================================
+メインメニュー
+==========================================*/
+#menu {
+	width: 960px;
+	height: 40px; /* メインメニューの幅と高さ ピクセル*/
+	margin: 0px 20px; /* 上下0、左右20 1000-960=40 */
+}
+
+/* liだけだと全てのli要素に適用されてしまうのでセレクター（id=menu）で指定する */
+#menu li {
+	list-style-type: none; /* リストマーカー無しにする 四角にするsquare*/
+	display: inline;
+	/* リスト項目をインライン表示する。displayプロパティは表示形式を指定できる。
+	inlineは要素が横に平べったく並んでいく。他にblock（横までいっぱいに広がり、縦に並んでいく）などがある。 */
+	
+	float: left; /* リスト項目を横に並べる */
+}
+
+#menu li a {
+	background-color:dodgerblue; /* 背景色 */
+	color: #ffffff; /* 文字色 */
+	display: block; /* リンク部分をブロック表示にする 幅と高さをブロック状に固定*/
+	width: 240px; height:30px; /* 240*4=960 */
+	
+	padding: 10px 0px 0px 0px; /* 上パディング 上・右・下・左 */
+	text-align: center; /* テキストをセンターにそろえる */
+	text-decoration: none; /* リンクの下線を無しにする */
+}
+
+#menu li a:hover {
+	background-color: blue; /* リンクにマウスが乗ったら色を変える */
+}
+
+
+/*========================================
+ヘッダ画像
+==========================================*/
+#img_index {
+	width: 960px; height: 340px;
+	margin:5px 20px;
+}
+#img_subpage {
+	width: 960px; height:240px;
+	margin:5px 20px;
+}
+
+/*========================================
+サブメニュー（左カラム）
+==========================================*/
+h2 {
+	width:160px; height: 35px;
+	padding:15px 20px 0px 80px;
+	font-size:16px;
+	
+	background-color: crimson;
+	color:#ffffff;
+}
+#submenu {
+	width: 260px;
+	margin: 10px 10px 10px 25px; 
+	float:left;
+}
+
+#submenu ul li { 
+	list-style-type: none;
+}
+
+#submenu ul li a { 
+	display: block;
+	height: 30px;
+	padding: 10px 0px 0px 30px;
+	text-decoration: none;
+	/*border-bottom: 1px dashed  silver;*/
+	background: -webkit-linear-gradient(top, #f5f5f5 0%, #d3d3d3 100%);/*グラデーション*/
+	background: linear-gradient(to bottom, #f5f5f5 0%, #d3d3d3 100%);/*グラデーション*/
+	background-repeat: no-repeat;
+	color: #333333;
+}
+#submenu ul li:first-child a {
+	/*border-top: 1px dashed  silver;*/
+}
+#submenu ul a:hover {
+	text-decoration: underline;
+}
+#submenu ul li a:before { /* a:beforeは「a要素の直前」という意味 ■■*/
+	/*content: url("images/icon_submenu.png"); /* 内容挿入にはcontentプロパティを使用*/
+	font-family: "Font Awesome 5 Free";
+	content: '\f152';
+	font-weight: 900;
+	margin: 0px 10px 0px 10px;
+	vertical-align:text-top; /* 縦方向の表示位置. テキストの上端に表示位置を揃える */
+	color: blue;
+}
+
+/*========================================
+インフォメーション（右カラム）
+==========================================*/
+#info {
+	width: 660px;
+	float: left;
+	padding: 10px 20px 0px 0px; 
+}
+h3 {
+	font-size: 14px;
+	width: 660px;
+	padding: 10px 0px 10px 20px;
+	background-color: lightblue;
+	color: #333333;
+	border-radius: 3px;
+}
+.infoimg_index {
+/* classは.(ドット)で指定する */
+	width: 200px; height: 150px;
+	margin: 0px 0px 20px 20px;
+	float: right; /* 画像を右寄せする leftにしてみる*/
+	/* floatプロパティを指定された要素（今回はimg要素）は、
+	ウェブページからフロート（浮遊）した状態になります。
+	フロート要素の後に続く要素は、空いたスペースに流し込まれたような配置になります。*/
+}
+.infoimg_subpage {
+	width: 400px; height: 300px;
+	margin:0px 20px 20px 0px;
+	float: left;
+}
+.infoimg_tel {
+	display: block;
+	width:400px; height:80px;
+}
+
+hr {
+	clear: both; /* フロートをクリアする */
+}
+video {
+	margin:10px 0px 0px 10px;
+}
+/*============================================
+備考情報
+============================================*/
+div.remarks {
+	margin:0px 10px 10px 10px;
+}
+h4 {
+	color:#000066;
+}
+
+/*========================================
+フッタ
+==========================================*/
+#footer {
+	clear: both; /* 回り込みを解除する */
+	height: 40px;/*以下*/
+	padding: 10px 0px 0px 0px;
+	font-size:x-small;
+	text-align: center;
+	
+}
